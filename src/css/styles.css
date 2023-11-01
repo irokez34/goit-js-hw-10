@@ -1,0 +1,136 @@
+body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body,select{
+background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-minimalistic-cat-claws-seamless-background-design-backgroundpinkcat-clawseamless-backgroundbanner-image_57663.jpg); 
+ }
+
+ .breed-select
+ {
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-minimalistic-cat-claws-seamless-background-design-backgroundpinkcat-clawseamless-backgroundbanner-image_57663.jpg);
+ }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    list-style: none;
+    
+  }
+  img {
+    display: block;
+    max-width: 60%;
+    object-fit: cover;
+    border-radius: 20px;
+    height: auto;
+    animation: fadeInImage 4s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  img:hover {
+    transform: scale(1.1); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+
+  }
+  .is-hidden {
+    visibility: hidden;
+  }
+  .js-list{
+    display: flex;
+   flex-flow: column wrap;
+    gap: 25px;
+    justify-content: center;
+    animation: fadeIn 1.5s ease;
+    
+  }
+  .js-list-item
+  {
+    max-width: 100%;
+    animation: fadeIn 1s ease;
+
+  }
+  .js-cat-name
+  {
+    font-size: 36px;
+  }
+  .js-text
+  {
+    line-height: 1.5;
+    font-weight: 600;
+    color: #070707;
+    transition: all 0.3s ease;
+    cursor: pointer;
+      transition: color 0.3s ease;
+
+  }
+  .js-text:hover
+  {
+    color:whitesmoke;
+  }
+  .js-span-text
+  {
+    animation: fadeIn 1s ease;
+
+  }
+  .breed-select {
+ 
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .cat-info {
+     display: flex;
+    gap: 40px; 
+    width: 100%;
+    max-width: 70%;
+    padding: 20px 20px;
+    margin: 20px auto 0 auto;
+    animation: fadeIn 1s ease;
+   
+  }
+  .loader {
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #040303;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInImage {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
